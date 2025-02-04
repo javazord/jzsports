@@ -22,5 +22,7 @@ public class Tournament implements Serializable {
     private List<Team> teams;
     @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL)
     private List<Round> rounds;
+    @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL)
+    private List<Classification> classifications;
 
 }

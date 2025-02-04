@@ -26,5 +26,8 @@ public class Classification implements Serializable {
     @OneToOne
     @JoinColumn(name = "team_id")
     private Team team;
+    @ManyToOne
+    @JoinColumn(name = "tournament_id", nullable = false)
+    private Tournament tournament;
 
 }
