@@ -1,9 +1,17 @@
 package br.com.web.tournament.jzsports.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 @Entity
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Classification implements Serializable {
 
     @Id
@@ -26,5 +34,8 @@ public class Classification implements Serializable {
     @OneToOne
     @JoinColumn(name = "team_id")
     private Team team;
+    @ManyToOne
+    @JoinColumn(name = "tournament_id", nullable = false)
+    private Tournament tournament;
 
 }

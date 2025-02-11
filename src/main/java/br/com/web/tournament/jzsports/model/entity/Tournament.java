@@ -1,12 +1,20 @@
 package br.com.web.tournament.jzsports.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 @Entity
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Tournament implements Serializable {
 
     @Id
@@ -22,5 +30,7 @@ public class Tournament implements Serializable {
     private List<Team> teams;
     @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL)
     private List<Round> rounds;
+    @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL)
+    private List<Classification> classifications;
 
 }
