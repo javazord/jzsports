@@ -7,7 +7,7 @@ import java.util.List;
 public interface GoalService {
 
     Goal save(Goal goal);
-    Goal update(Goal goal);
+    Goal update(Long id, Goal goal);
     void delete(Goal goal);
     Goal findById(Long id);
     List<Goal> findAll();

@@ -8,6 +8,7 @@ import java.util.List;
 public interface RoundRepository extends JpaRepository<Round, Long> {
 
     //trazer as partidas onde o id_tournament = ?
+    Round findByTournamentId(Long tournamentId);
     List<Round> findAllByTournamentId(Long tournamentId);
 
 }

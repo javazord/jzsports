@@ -8,9 +8,8 @@ import java.util.Optional;
 public interface UserService {
 
     User save(User user);
-    User update(User user);
-    Optional<User> findByTeam(String team);
-    Optional<User> findById(Long id);
+    User update(Long id, User user);
+    User findById(Long id);
     Optional<User> findByLogin(String login);
     List<User> search(User user);
     boolean searchUser(User user);
