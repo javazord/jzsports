@@ -1,4 +1,4 @@
-package br.com.web.tournament.jzsports.api.error;
+package br.com.web.tournament.jzsports.exception;
 
 import lombok.Builder;
 import lombok.Data;

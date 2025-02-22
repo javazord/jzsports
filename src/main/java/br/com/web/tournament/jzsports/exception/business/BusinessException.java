@@ -1,4 +1,4 @@
-package br.com.web.tournament.jzsports.api.error.business;
+package br.com.web.tournament.jzsports.exception.business;
 
 public class BusinessException extends RuntimeException {
 

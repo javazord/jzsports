@@ -1,6 +1,6 @@
-package br.com.web.tournament.jzsports.api.error;
+package br.com.web.tournament.jzsports.exception;
 
-import br.com.web.tournament.jzsports.api.error.business.BusinessException;
+import br.com.web.tournament.jzsports.exception.business.BusinessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

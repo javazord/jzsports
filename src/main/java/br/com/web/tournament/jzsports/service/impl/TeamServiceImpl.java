@@ -1,6 +1,6 @@
 package br.com.web.tournament.jzsports.service.impl;
 
-import br.com.web.tournament.jzsports.api.error.business.BusinessException;
+import br.com.web.tournament.jzsports.exception.business.BusinessException;
 import br.com.web.tournament.jzsports.model.entity.Team;
 import br.com.web.tournament.jzsports.repository.TeamRepository;
 import br.com.web.tournament.jzsports.service.TeamService;
